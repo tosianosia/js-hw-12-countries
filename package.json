@@ -1,0 +1,44 @@
+{
+  "name": "js-hw-12-countries",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "homepage": "https://github.com/tosianosia/js-hw-12-countries",
+  "scripts": {
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html",
+    "predeploy": "npm run build -- --public-url=/js-hw-12-countries/",
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tosianosia/js-hw-12-countries.git"
+  },
+  "keywords": [],
+  "author": "Anatoliy Nosenko <nosia80@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tosianosia/js-hw-12-countries/issues"
+  },
+  "customDistStructure": {
+    "config": {
+      ".css": "css",
+      ".js": "js",
+      "images": [
+        ".jpg",
+        ".svg",
+        ".png"
+      ]
+    }
+  },
+  "devDependencies": {
+    "@pnotify/core": "^5.1.2",
+    "gh-pages": "^6.1.0",
+    "parcel-bundler": "^1.12.5",
+    "parcel-plugin-custom-dist-structure": "^1.1.20",
+    "parcel-plugin-handlebars-precompile": "^1.0.2"
+  },
+  "dependencies": {
+    "lodash.debounce": "^4.0.8"
+  }
+}
